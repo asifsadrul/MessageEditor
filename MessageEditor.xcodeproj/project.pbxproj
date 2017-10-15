@@ -17,6 +17,8 @@
 		F8EDEF011F930288000C6CE9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEF001F930288000C6CE9 /* SettingsViewController.swift */; };
 		F8EDEF031F93029C000C6CE9 /* MessageEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEF021F93029C000C6CE9 /* MessageEditor.storyboard */; };
 		F8EDEF051F9302B4000C6CE9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEF041F9302B4000C6CE9 /* Settings.storyboard */; };
+		F8EDEF071F930C51000C6CE9 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEF061F930C51000C6CE9 /* ViewControllerExtension.swift */; };
+		F8EDEF091F930E07000C6CE9 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEF081F930E07000C6CE9 /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F8EDEF001F930288000C6CE9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F8EDEF021F93029C000C6CE9 /* MessageEditor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MessageEditor.storyboard; sourceTree = "<group>"; };
 		F8EDEF041F9302B4000C6CE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F8EDEF061F930C51000C6CE9 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		F8EDEF081F930E07000C6CE9 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 		F8EDEEF61F930169000C6CE9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F8EDEF061F930C51000C6CE9 /* ViewControllerExtension.swift */,
+				F8EDEF081F930E07000C6CE9 /* ViewExtension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -274,6 +280,8 @@
 			files = (
 				F8EDEEEA1F930097000C6CE9 /* MessageEditor.xcdatamodeld in Sources */,
 				F8EDEEFF1F930277000C6CE9 /* MessageEditorViewController.swift in Sources */,
+				F8EDEF071F930C51000C6CE9 /* ViewControllerExtension.swift in Sources */,
+				F8EDEF091F930E07000C6CE9 /* ViewExtension.swift in Sources */,
 				F8EDEEE21F930097000C6CE9 /* AppDelegate.swift in Sources */,
 				F8EDEF011F930288000C6CE9 /* SettingsViewController.swift in Sources */,
 				F8EDEEFB1F9301B2000C6CE9 /* DatabaseController.swift in Sources */,

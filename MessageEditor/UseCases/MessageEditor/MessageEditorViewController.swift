@@ -62,7 +62,7 @@ class MessageEditorViewController: UIViewController {
   }
 
   
-  //MARK:- Textview delegate and datasource methods
+  //MARK:- Textview delegate methods
 
   func textViewDidBeginEditing(_ textView: UITextView) {
     placeholderLbl.isHidden = true
