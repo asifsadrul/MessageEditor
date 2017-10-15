@@ -20,15 +20,42 @@
                     <view key="view" contentMode="scaleToFill" id="iFo-5v-qZy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Qh-9n-cCj">
+                                <rect key="frame" x="16" y="80" width="343" height="222.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aez-3z-bjk">
+                                <rect key="frame" x="16" y="80" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1H0-ag-0rV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aez-3z-bjk" firstAttribute="leading" secondItem="iFo-5v-qZy" secondAttribute="leading" constant="16" id="61a-uR-vfR"/>
+                            <constraint firstAttribute="trailing" secondItem="aez-3z-bjk" secondAttribute="trailing" constant="16" id="KW7-vX-UyF"/>
+                            <constraint firstItem="aez-3z-bjk" firstAttribute="top" secondItem="4Ja-eY-apq" secondAttribute="bottom" constant="16" id="e0h-oe-FRJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F9l-XK-u9A">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="69c-Uh-qpw">
                             <connections>
-                                <segue destination="9Vh-yD-pqh" kind="show" id="OpF-Cu-Uag"/>
+                                <segue destination="9Vh-yD-pqh" kind="show" identifier="settings" id="OpF-Cu-Uag"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="messageTextView" destination="5Qh-9n-cCj" id="gSA-ce-WjB"/>
+                        <outlet property="placeholderLbl" destination="aez-3z-bjk" id="oui-8O-BGj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6R-v3-hCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="1584" y="130"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Message Editor-->
         <scene sceneID="MuV-UD-3So">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mTA-01-ree" sceneMemberID="viewController">
+                <navigationController title="Message Editor" automaticallyAdjustsScrollViewInsets="NO" id="mTA-01-ree" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q3I-wT-b7F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
