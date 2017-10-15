@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8EDEEE21F930097000C6CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEEE11F930097000C6CE9 /* AppDelegate.swift */; };
+		F8EDEEEA1F930097000C6CE9 /* MessageEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEEE81F930097000C6CE9 /* MessageEditor.xcdatamodeld */; };
+		F8EDEEEC1F930097000C6CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEEEB1F930097000C6CE9 /* Assets.xcassets */; };
+		F8EDEEEF1F930097000C6CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEEED1F930097000C6CE9 /* LaunchScreen.storyboard */; };
+		F8EDEEFB1F9301B2000C6CE9 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEEFA1F9301B2000C6CE9 /* DatabaseController.swift */; };
+		F8EDEEFF1F930277000C6CE9 /* MessageEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEEFE1F930277000C6CE9 /* MessageEditorViewController.swift */; };
+		F8EDEF011F930288000C6CE9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEF001F930288000C6CE9 /* SettingsViewController.swift */; };
+		F8EDEF031F93029C000C6CE9 /* MessageEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEF021F93029C000C6CE9 /* MessageEditor.storyboard */; };
+		F8EDEF051F9302B4000C6CE9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEF041F9302B4000C6CE9 /* Settings.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8EDEEDE1F930097000C6CE9 /* MessageEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8EDEEE11F930097000C6CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8EDEEE91F930097000C6CE9 /* MessageEditor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MessageEditor.xcdatamodel; sourceTree = "<group>"; };
+		F8EDEEEB1F930097000C6CE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		F8EDEEEE1F930097000C6CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8EDEEF01F930097000C6CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		F8EDEEFA1F9301B2000C6CE9 /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		F8EDEEFE1F930277000C6CE9 /* MessageEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageEditorViewController.swift; sourceTree = "<group>"; };
+		F8EDEF001F930288000C6CE9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F8EDEF021F93029C000C6CE9 /* MessageEditor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MessageEditor.storyboard; sourceTree = "<group>"; };
+		F8EDEF041F9302B4000C6CE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8EDEEDB1F930097000C6CE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8EDEED51F930096000C6CE9 = {
+			isa = PBXGroup;
+			children = (
+				F8EDEEE01F930097000C6CE9 /* MessageEditor */,
+				F8EDEEDF1F930097000C6CE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8EDEEDF1F930097000C6CE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8EDEEDE1F930097000C6CE9 /* MessageEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8EDEEE01F930097000C6CE9 /* MessageEditor */ = {
+			isa = PBXGroup;
+			children = (
+				F8EDEEE11F930097000C6CE9 /* AppDelegate.swift */,
+				F8EDEEF61F930169000C6CE9 /* Utilities */,
+				F8EDEEF71F930169000C6CE9 /* Model */,
+				F8EDEEF81F930169000C6CE9 /* UseCases */,
+				F8EDEEF91F930169000C6CE9 /* Resources */,
+			);
+			path = MessageEditor;
+			sourceTree = "<group>";
+		};
+		F8EDEEF61F930169000C6CE9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F8EDEEF71F930169000C6CE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8EDEEFA1F9301B2000C6CE9 /* DatabaseController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8EDEEF81F930169000C6CE9 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F8EDEEFC1F93025B000C6CE9 /* MessageEditor */,
+				F8EDEEFD1F93025B000C6CE9 /* Settigns */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F8EDEEF91F930169000C6CE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8EDEEEB1F930097000C6CE9 /* Assets.xcassets */,
+				F8EDEEED1F930097000C6CE9 /* LaunchScreen.storyboard */,
+				F8EDEEF01F930097000C6CE9 /* Info.plist */,
+				F8EDEEE81F930097000C6CE9 /* MessageEditor.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F8EDEEFC1F93025B000C6CE9 /* MessageEditor */ = {
+			isa = PBXGroup;
+			children = (
+				F8EDEEFE1F930277000C6CE9 /* MessageEditorViewController.swift */,
+				F8EDEF021F93029C000C6CE9 /* MessageEditor.storyboard */,
+			);
+			path = MessageEditor;
+			sourceTree = "<group>";
+		};
+		F8EDEEFD1F93025B000C6CE9 /* Settigns */ = {
+			isa = PBXGroup;
+			children = (
+				F8EDEF001F930288000C6CE9 /* SettingsViewController.swift */,
+				F8EDEF041F9302B4000C6CE9 /* Settings.storyboard */,
+			);
+			path = Settigns;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8EDEEDD1F930097000C6CE9 /* MessageEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8EDEEF31F930098000C6CE9 /* Build configuration list for PBXNativeTarget "MessageEditor" */;
+			buildPhases = (
+				F8EDEEDA1F930097000C6CE9 /* Sources */,
+				F8EDEEDB1F930097000C6CE9 /* Frameworks */,
+				F8EDEEDC1F930097000C6CE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageEditor;
+			productName = MessageEditor;
+			productReference = F8EDEEDE1F930097000C6CE9 /* MessageEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8EDEED61F930096000C6CE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Asif Sadrul";
+				TargetAttributes = {
+					F8EDEEDD1F930097000C6CE9 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F8EDEED91F930096000C6CE9 /* Build configuration list for PBXProject "MessageEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8EDEED51F930096000C6CE9;
+			productRefGroup = F8EDEEDF1F930097000C6CE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8EDEEDD1F930097000C6CE9 /* MessageEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8EDEEDC1F930097000C6CE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EDEEEF1F930097000C6CE9 /* LaunchScreen.storyboard in Resources */,
+				F8EDEF031F93029C000C6CE9 /* MessageEditor.storyboard in Resources */,
+				F8EDEEEC1F930097000C6CE9 /* Assets.xcassets in Resources */,
+				F8EDEF051F9302B4000C6CE9 /* Settings.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8EDEEDA1F930097000C6CE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EDEEEA1F930097000C6CE9 /* MessageEditor.xcdatamodeld in Sources */,
+				F8EDEEFF1F930277000C6CE9 /* MessageEditorViewController.swift in Sources */,
+				F8EDEEE21F930097000C6CE9 /* AppDelegate.swift in Sources */,
+				F8EDEF011F930288000C6CE9 /* SettingsViewController.swift in Sources */,
+				F8EDEEFB1F9301B2000C6CE9 /* DatabaseController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8EDEEED1F930097000C6CE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8EDEEEE1F930097000C6CE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8EDEEF11F930098000C6CE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8EDEEF21F930098000C6CE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8EDEEF41F930098000C6CE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MessageEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asif.MessageEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F8EDEEF51F930098000C6CE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MessageEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asif.MessageEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8EDEED91F930096000C6CE9 /* Build configuration list for PBXProject "MessageEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8EDEEF11F930098000C6CE9 /* Debug */,
+				F8EDEEF21F930098000C6CE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8EDEEF31F930098000C6CE9 /* Build configuration list for PBXNativeTarget "MessageEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8EDEEF41F930098000C6CE9 /* Debug */,
+				F8EDEEF51F930098000C6CE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F8EDEEE81F930097000C6CE9 /* MessageEditor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F8EDEEE91F930097000C6CE9 /* MessageEditor.xcdatamodel */,
+			);
+			currentVersion = F8EDEEE91F930097000C6CE9 /* MessageEditor.xcdatamodel */;
+			name = MessageEditor.xcdatamodeld;
+			path = ../MessageEditor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F8EDEED61F930096000C6CE9 /* Project object */;
+}
