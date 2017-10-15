@@ -12,7 +12,7 @@
         <!--Settings View Controller-->
         <scene sceneID="n6t-jC-V3B">
             <objects>
-                <viewController id="GQy-Bz-rlp" customClass="SettingsViewController" customModule="MessageEditor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settings" id="GQy-Bz-rlp" customClass="SettingsViewController" customModule="MessageEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z7H-Z9-shg"/>
                         <viewControllerLayoutGuide type="bottom" id="RKU-e9-lkH"/>

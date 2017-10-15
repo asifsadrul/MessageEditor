@@ -22,16 +22,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="F9l-XK-u9A"/>
+                    <navigationItem key="navigationItem" id="F9l-XK-u9A">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="69c-Uh-qpw">
+                            <connections>
+                                <segue destination="9Vh-yD-pqh" kind="show" id="OpF-Cu-Uag"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6R-v3-hCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1036" y="68.815592203898049"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--storyboard-->
         <scene sceneID="9w8-WM-j7x">
             <objects>
-                <viewControllerPlaceholder id="9Vh-yD-pqh" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="storyboard" id="9Vh-yD-pqh" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z33-x5-89d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1584" y="130"/>

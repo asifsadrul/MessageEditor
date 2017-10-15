@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0633FA9D2779212F9A446C1B /* Pods_MessageEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD2000D82CCA4244D113450 /* Pods_MessageEditor.framework */; };
 		F8EDEEE21F930097000C6CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEEE11F930097000C6CE9 /* AppDelegate.swift */; };
 		F8EDEEEA1F930097000C6CE9 /* MessageEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEEE81F930097000C6CE9 /* MessageEditor.xcdatamodeld */; };
 		F8EDEEEC1F930097000C6CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEEEB1F930097000C6CE9 /* Assets.xcassets */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C87A59E240DFD3EBD73FA82 /* Pods-MessageEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessageEditor/Pods-MessageEditor.release.xcconfig"; sourceTree = "<group>"; };
+		6DD2000D82CCA4244D113450 /* Pods_MessageEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0924B9AFFC112EB4B1D274E /* Pods-MessageEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessageEditor/Pods-MessageEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		F8EDEEDE1F930097000C6CE9 /* MessageEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8EDEEE11F930097000C6CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8EDEEE91F930097000C6CE9 /* MessageEditor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MessageEditor.xcdatamodel; sourceTree = "<group>"; };
@@ -37,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0633FA9D2779212F9A446C1B /* Pods_MessageEditor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ACE7E5BC74CBFBF3E756588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0924B9AFFC112EB4B1D274E /* Pods-MessageEditor.debug.xcconfig */,
+				2C87A59E240DFD3EBD73FA82 /* Pods-MessageEditor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E076A9B95A1BE5EE419B09D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DD2000D82CCA4244D113450 /* Pods_MessageEditor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8EDEED51F930096000C6CE9 = {
 			isa = PBXGroup;
 			children = (
 				F8EDEEE01F930097000C6CE9 /* MessageEditor */,
 				F8EDEEDF1F930097000C6CE9 /* Products */,
+				3ACE7E5BC74CBFBF3E756588 /* Pods */,
+				5E076A9B95A1BE5EE419B09D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8EDEEF31F930098000C6CE9 /* Build configuration list for PBXNativeTarget "MessageEditor" */;
 			buildPhases = (
+				B2214FD243189326A4559D1A /* [CP] Check Pods Manifest.lock */,
 				F8EDEEDA1F930097000C6CE9 /* Sources */,
 				F8EDEEDB1F930097000C6CE9 /* Frameworks */,
 				F8EDEEDC1F930097000C6CE9 /* Resources */,
+				00FB7DEF28EF2C1CDFC4BB2C /* [CP] Embed Pods Frameworks */,
+				AB1B398A02DD9DCF19F51149 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +219,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00FB7DEF28EF2C1CDFC4BB2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessageEditor/Pods-MessageEditor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB1B398A02DD9DCF19F51149 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessageEditor/Pods-MessageEditor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2214FD243189326A4559D1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8EDEEDA1F930097000C6CE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -238,6 +313,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -288,6 +364,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -315,6 +392,7 @@
 		};
 		F8EDEEF41F930098000C6CE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0924B9AFFC112EB4B1D274E /* Pods-MessageEditor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MessageEditor/Info.plist;
@@ -327,6 +405,7 @@
 		};
 		F8EDEEF51F930098000C6CE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C87A59E240DFD3EBD73FA82 /* Pods-MessageEditor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MessageEditor/Info.plist;
@@ -356,6 +435,7 @@
 				F8EDEEF51F930098000C6CE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
