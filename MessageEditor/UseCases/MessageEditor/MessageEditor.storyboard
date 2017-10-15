@@ -74,9 +74,10 @@
             <objects>
                 <navigationController title="Message Editor" automaticallyAdjustsScrollViewInsets="NO" id="mTA-01-ree" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q3I-wT-b7F">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Q3I-wT-b7F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.42352941179999998" green="0.7725490196" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

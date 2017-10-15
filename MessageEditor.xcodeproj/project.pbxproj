@@ -19,6 +19,7 @@
 		F8EDEF051F9302B4000C6CE9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEF041F9302B4000C6CE9 /* Settings.storyboard */; };
 		F8EDEF071F930C51000C6CE9 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEF061F930C51000C6CE9 /* ViewControllerExtension.swift */; };
 		F8EDEF091F930E07000C6CE9 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEF081F930E07000C6CE9 /* ViewExtension.swift */; };
+		F8EDEF0B1F93181E000C6CE9 /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEF0A1F93181E000C6CE9 /* AlertMessages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F8EDEF041F9302B4000C6CE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		F8EDEF061F930C51000C6CE9 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		F8EDEF081F930E07000C6CE9 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		F8EDEF0A1F93181E000C6CE9 /* AlertMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		F8EDEEF61F930169000C6CE9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F8EDEF0A1F93181E000C6CE9 /* AlertMessages.swift */,
 				F8EDEF061F930C51000C6CE9 /* ViewControllerExtension.swift */,
 				F8EDEF081F930E07000C6CE9 /* ViewExtension.swift */,
 			);
@@ -284,6 +287,7 @@
 				F8EDEF091F930E07000C6CE9 /* ViewExtension.swift in Sources */,
 				F8EDEEE21F930097000C6CE9 /* AppDelegate.swift in Sources */,
 				F8EDEF011F930288000C6CE9 /* SettingsViewController.swift in Sources */,
+				F8EDEF0B1F93181E000C6CE9 /* AlertMessages.swift in Sources */,
 				F8EDEEFB1F9301B2000C6CE9 /* DatabaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

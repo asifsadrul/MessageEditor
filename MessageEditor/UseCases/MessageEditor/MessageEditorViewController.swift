@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AWSSNS
+import AWSCore
+import AWSCognito
 
 class MessageEditorViewController: UIViewController {
 
@@ -44,21 +47,14 @@ class MessageEditorViewController: UIViewController {
   }
   
   func displayBlueBand() {
-    //let customView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44))
     self.messageTextView.inputAccessoryView?.isHidden = false
-    
-    //customView .addSubview(customBTn)
-    DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
-      //self.messageTextView.inputAccessoryView?.isHidden = true
-      print("Called")
+    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
       self.messageTextView.inputAccessoryView?.isHidden = true
     }
-    
   }
   
-  
   func shakeScreen() {
-    //self.view.shake()
+    self.view.shake()
   }
 
   
@@ -91,5 +87,4 @@ class MessageEditorViewController: UIViewController {
     }
     return true
   }
-  
 }
