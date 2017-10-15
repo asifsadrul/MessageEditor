@@ -13,11 +13,22 @@ class MessageEditorViewController: UIViewController {
   @IBOutlet weak var placeholderLbl: UILabel!
   @IBOutlet weak var messageTextView: UITextView!
   let wordOfTheDay = "morning"
-  var customBarBTn: UIButton!
+  var customBlueBand: UIButton!
   
   override func viewDidLoad() {
       super.viewDidLoad()
       handleRightBarBtn()
+      handleBlueBand()
+  }
+  
+  func handleBlueBand() {
+    self.customBlueBand = UIButton(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44))
+    self.customBlueBand.titleLabel?.textColor = UIColor.white
+    self.customBlueBand.backgroundColor = UIColor.blue
+    self.customBlueBand.setTitle(wordOfTheDay, for: UIControlState.normal)
+    
+    messageTextView.inputAccessoryView = self.customBlueBand
+    messageTextView.inputAccessoryView?.isHidden = true
   }
   
   func handleRightBarBtn() {
