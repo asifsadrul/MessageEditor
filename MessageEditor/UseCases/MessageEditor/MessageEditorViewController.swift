@@ -43,5 +43,53 @@ class MessageEditorViewController: UIViewController {
     self.performSegue(withIdentifier: "settings", sender: self)
   }
   
+  func displayBlueBand() {
+    //let customView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44))
+    self.messageTextView.inputAccessoryView?.isHidden = false
+    
+    //customView .addSubview(customBTn)
+    DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+      //self.messageTextView.inputAccessoryView?.isHidden = true
+      print("Called")
+      self.messageTextView.inputAccessoryView?.isHidden = true
+    }
+    
+  }
+  
+  
+  func shakeScreen() {
+    //self.view.shake()
+  }
 
+  
+  //MARK:- Textview delegate and datasource methods
+
+  func textViewDidBeginEditing(_ textView: UITextView) {
+    placeholderLbl.isHidden = true
+  }
+  
+  func textViewDidEndEditing(_ textView: UITextView) {
+    placeholderLbl.isHidden = (textView.text.characters.count > 0)
+  }
+  
+  func textViewDidChange(_ textView: UITextView) {
+    placeholderLbl.isHidden = (textView.text.characters.count > 0)
+  }
+  
+  func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+    
+    if text == " " {
+      if textView.text.lowercased().range(of:wordOfTheDay.lowercased()) != nil {
+        displayBlueBand()
+        shakeScreen()
+      }
+    }
+    
+    if(text == "\n") {
+      textView.resignFirstResponder()
+      return false
+    }
+    return true
+  }
+  
 }
