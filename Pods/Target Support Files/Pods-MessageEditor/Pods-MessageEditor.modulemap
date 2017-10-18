@@ -1,0 +1,6 @@
+framework module Pods_MessageEditor {
+  umbrella header "Pods-MessageEditor-umbrella.h"
+
+  export *
+  module * { export * }
+}

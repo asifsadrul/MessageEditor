@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="n6t-jC-V3B">
             <objects>
-                <viewController id="GQy-Bz-rlp" customClass="SettingsViewController" customModule="MessageEditor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settings" title="Settings" id="GQy-Bz-rlp" customClass="SettingsViewController" customModule="MessageEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z7H-Z9-shg"/>
                         <viewControllerLayoutGuide type="bottom" id="RKU-e9-lkH"/>
@@ -20,8 +20,76 @@
                     <view key="view" contentMode="scaleToFill" id="AZU-dV-8nL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GN-Vv-VUA">
+                                <rect key="frame" x="16" y="36" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Bzs-4B-XZl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2c-7a-u35">
+                                <rect key="frame" x="16" y="87" width="343" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="k92-E1-YFi"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="GQy-Bz-rlp" id="UaA-4F-Bdc"/>
+                                </connections>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tYd-jq-FVF">
+                                <rect key="frame" x="16" y="133" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qY3-hK-vsB">
+                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="30"/>
+                                        <color key="backgroundColor" red="0.42352941176470588" green="0.77254901960784317" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Edit">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editBtnAction:" destination="GQy-Bz-rlp" eventType="touchUpInside" id="0jk-FN-QCy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kY-Hf-xjA">
+                                        <rect key="frame" x="176.5" y="0.0" width="166.5" height="30"/>
+                                        <color key="backgroundColor" red="0.42352941176470588" green="0.77254901960784317" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveBtnAction:" destination="GQy-Bz-rlp" eventType="touchUpInside" id="hlW-y5-BDq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Sog-X6-uHZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q2c-7a-u35" firstAttribute="leading" secondItem="AZU-dV-8nL" secondAttribute="leading" constant="16" id="0VV-iB-tqg"/>
+                            <constraint firstItem="tYd-jq-FVF" firstAttribute="top" secondItem="q2c-7a-u35" secondAttribute="bottom" constant="16" id="1Si-VB-SzD"/>
+                            <constraint firstAttribute="trailing" secondItem="q2c-7a-u35" secondAttribute="trailing" constant="16" id="2W3-aA-O6b"/>
+                            <constraint firstItem="tYd-jq-FVF" firstAttribute="leading" secondItem="AZU-dV-8nL" secondAttribute="leading" constant="16" id="A73-Jx-noS"/>
+                            <constraint firstItem="2GN-Vv-VUA" firstAttribute="top" secondItem="z7H-Z9-shg" secondAttribute="bottom" constant="16" id="CW3-IE-1QZ"/>
+                            <constraint firstAttribute="trailing" secondItem="tYd-jq-FVF" secondAttribute="trailing" constant="16" id="Gbc-r2-Bhx"/>
+                            <constraint firstItem="q2c-7a-u35" firstAttribute="top" secondItem="2GN-Vv-VUA" secondAttribute="bottom" constant="30" id="T5g-94-uzo"/>
+                            <constraint firstAttribute="trailing" secondItem="2GN-Vv-VUA" secondAttribute="trailing" constant="16" id="bqX-au-kQx"/>
+                            <constraint firstItem="2GN-Vv-VUA" firstAttribute="leading" secondItem="AZU-dV-8nL" secondAttribute="leading" constant="16" id="jAf-yI-BF7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="editBtn" destination="qY3-hK-vsB" id="z9K-hG-XE2"/>
+                        <outlet property="nameTextFld" destination="q2c-7a-u35" id="2ZD-Kw-RcR"/>
+                        <outlet property="saveBtn" destination="9kY-Hf-xjA" id="S1J-h0-0eI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hv-gP-8mu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

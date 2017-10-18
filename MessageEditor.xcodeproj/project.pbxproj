@@ -7,29 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0633FA9D2779212F9A446C1B /* Pods_MessageEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD2000D82CCA4244D113450 /* Pods_MessageEditor.framework */; };
+		F88453D91F98485A001DAE12 /* WordOfTheDayResonse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88453D81F98485A001DAE12 /* WordOfTheDayResonse.swift */; };
+		F88453DB1F984979001DAE12 /* DefinitionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88453DA1F984979001DAE12 /* DefinitionArray.swift */; };
+		F88453DD1F984ABB001DAE12 /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88453DC1F984ABB001DAE12 /* APIUrls.swift */; };
+		F88453DF1F984AF7001DAE12 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88453DE1F984AF7001DAE12 /* Constants.swift */; };
+		F88453E11F984E84001DAE12 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88453E01F984E84001DAE12 /* Extensions.swift */; };
 		F8EDEEE21F930097000C6CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEEE11F930097000C6CE9 /* AppDelegate.swift */; };
 		F8EDEEEA1F930097000C6CE9 /* MessageEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEEE81F930097000C6CE9 /* MessageEditor.xcdatamodeld */; };
 		F8EDEEEC1F930097000C6CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEEEB1F930097000C6CE9 /* Assets.xcassets */; };
 		F8EDEEEF1F930097000C6CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEEED1F930097000C6CE9 /* LaunchScreen.storyboard */; };
-		F8EDEEFB1F9301B2000C6CE9 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEEFA1F9301B2000C6CE9 /* DatabaseController.swift */; };
 		F8EDEEFF1F930277000C6CE9 /* MessageEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEEFE1F930277000C6CE9 /* MessageEditorViewController.swift */; };
 		F8EDEF011F930288000C6CE9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEF001F930288000C6CE9 /* SettingsViewController.swift */; };
 		F8EDEF031F93029C000C6CE9 /* MessageEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEF021F93029C000C6CE9 /* MessageEditor.storyboard */; };
 		F8EDEF051F9302B4000C6CE9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EDEF041F9302B4000C6CE9 /* Settings.storyboard */; };
+		F8EDEF0B1F93181E000C6CE9 /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDEF0A1F93181E000C6CE9 /* AlertMessages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C87A59E240DFD3EBD73FA82 /* Pods-MessageEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessageEditor/Pods-MessageEditor.release.xcconfig"; sourceTree = "<group>"; };
+		6DD2000D82CCA4244D113450 /* Pods_MessageEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0924B9AFFC112EB4B1D274E /* Pods-MessageEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessageEditor/Pods-MessageEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		F88453D81F98485A001DAE12 /* WordOfTheDayResonse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordOfTheDayResonse.swift; sourceTree = "<group>"; };
+		F88453DA1F984979001DAE12 /* DefinitionArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionArray.swift; sourceTree = "<group>"; };
+		F88453DC1F984ABB001DAE12 /* APIUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
+		F88453DE1F984AF7001DAE12 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F88453E01F984E84001DAE12 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F8EDEEDE1F930097000C6CE9 /* MessageEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8EDEEE11F930097000C6CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8EDEEE11F930097000C6CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		F8EDEEE91F930097000C6CE9 /* MessageEditor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MessageEditor.xcdatamodel; sourceTree = "<group>"; };
 		F8EDEEEB1F930097000C6CE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		F8EDEEEE1F930097000C6CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8EDEEF01F930097000C6CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-		F8EDEEFA1F9301B2000C6CE9 /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		F8EDEEFE1F930277000C6CE9 /* MessageEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageEditorViewController.swift; sourceTree = "<group>"; };
 		F8EDEF001F930288000C6CE9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F8EDEF021F93029C000C6CE9 /* MessageEditor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MessageEditor.storyboard; sourceTree = "<group>"; };
 		F8EDEF041F9302B4000C6CE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F8EDEF0A1F93181E000C6CE9 /* AlertMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +51,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0633FA9D2779212F9A446C1B /* Pods_MessageEditor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ACE7E5BC74CBFBF3E756588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0924B9AFFC112EB4B1D274E /* Pods-MessageEditor.debug.xcconfig */,
+				2C87A59E240DFD3EBD73FA82 /* Pods-MessageEditor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E076A9B95A1BE5EE419B09D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DD2000D82CCA4244D113450 /* Pods_MessageEditor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F88453D71F984842001DAE12 /* WordnikResponse */ = {
+			isa = PBXGroup;
+			children = (
+				F88453D81F98485A001DAE12 /* WordOfTheDayResonse.swift */,
+				F88453DA1F984979001DAE12 /* DefinitionArray.swift */,
+			);
+			path = WordnikResponse;
+			sourceTree = "<group>";
+		};
 		F8EDEED51F930096000C6CE9 = {
 			isa = PBXGroup;
 			children = (
 				F8EDEEE01F930097000C6CE9 /* MessageEditor */,
 				F8EDEEDF1F930097000C6CE9 /* Products */,
+				3ACE7E5BC74CBFBF3E756588 /* Pods */,
+				5E076A9B95A1BE5EE419B09D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,7 +105,6 @@
 		F8EDEEE01F930097000C6CE9 /* MessageEditor */ = {
 			isa = PBXGroup;
 			children = (
-				F8EDEEE11F930097000C6CE9 /* AppDelegate.swift */,
 				F8EDEEF61F930169000C6CE9 /* Utilities */,
 				F8EDEEF71F930169000C6CE9 /* Model */,
 				F8EDEEF81F930169000C6CE9 /* UseCases */,
@@ -74,6 +116,10 @@
 		F8EDEEF61F930169000C6CE9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F88453DC1F984ABB001DAE12 /* APIUrls.swift */,
+				F88453DE1F984AF7001DAE12 /* Constants.swift */,
+				F8EDEF0A1F93181E000C6CE9 /* AlertMessages.swift */,
+				F88453E01F984E84001DAE12 /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -81,7 +127,7 @@
 		F8EDEEF71F930169000C6CE9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F8EDEEFA1F9301B2000C6CE9 /* DatabaseController.swift */,
+				F88453D71F984842001DAE12 /* WordnikResponse */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				F8EDEEEB1F930097000C6CE9 /* Assets.xcassets */,
+				F8EDEEE11F930097000C6CE9 /* AppDelegate.swift */,
 				F8EDEEED1F930097000C6CE9 /* LaunchScreen.storyboard */,
 				F8EDEEF01F930097000C6CE9 /* Info.plist */,
 				F8EDEEE81F930097000C6CE9 /* MessageEditor.xcdatamodeld */,
@@ -131,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8EDEEF31F930098000C6CE9 /* Build configuration list for PBXNativeTarget "MessageEditor" */;
 			buildPhases = (
+				B2214FD243189326A4559D1A /* [CP] Check Pods Manifest.lock */,
 				F8EDEEDA1F930097000C6CE9 /* Sources */,
 				F8EDEEDB1F930097000C6CE9 /* Frameworks */,
 				F8EDEEDC1F930097000C6CE9 /* Resources */,
+				00FB7DEF28EF2C1CDFC4BB2C /* [CP] Embed Pods Frameworks */,
+				AB1B398A02DD9DCF19F51149 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,16 +242,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00FB7DEF28EF2C1CDFC4BB2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessageEditor/Pods-MessageEditor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB1B398A02DD9DCF19F51149 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessageEditor/Pods-MessageEditor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2214FD243189326A4559D1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8EDEEDA1F930097000C6CE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F8EDEEEA1F930097000C6CE9 /* MessageEditor.xcdatamodeld in Sources */,
+				F88453DF1F984AF7001DAE12 /* Constants.swift in Sources */,
 				F8EDEEFF1F930277000C6CE9 /* MessageEditorViewController.swift in Sources */,
 				F8EDEEE21F930097000C6CE9 /* AppDelegate.swift in Sources */,
 				F8EDEF011F930288000C6CE9 /* SettingsViewController.swift in Sources */,
-				F8EDEEFB1F9301B2000C6CE9 /* DatabaseController.swift in Sources */,
+				F88453DD1F984ABB001DAE12 /* APIUrls.swift in Sources */,
+				F88453E11F984E84001DAE12 /* Extensions.swift in Sources */,
+				F88453DB1F984979001DAE12 /* DefinitionArray.swift in Sources */,
+				F8EDEF0B1F93181E000C6CE9 /* AlertMessages.swift in Sources */,
+				F88453D91F98485A001DAE12 /* WordOfTheDayResonse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +341,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -288,6 +392,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -315,7 +420,9 @@
 		};
 		F8EDEEF41F930098000C6CE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0924B9AFFC112EB4B1D274E /* Pods-MessageEditor.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MessageEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -327,7 +434,9 @@
 		};
 		F8EDEEF51F930098000C6CE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C87A59E240DFD3EBD73FA82 /* Pods-MessageEditor.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MessageEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -356,6 +465,7 @@
 				F8EDEEF51F930098000C6CE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
