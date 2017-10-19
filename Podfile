@@ -7,6 +7,8 @@ target 'MessageEditor' do
 	pod 'AWSSNS'
 		pod 'AWSCognito'
 		     pod 'AWSCognitoIdentityProvider'
+		     	pod 'Alamofire'
+		     		pod 'AlamofireObjectMapper'
   # Pods for MessageEditor
 
 end

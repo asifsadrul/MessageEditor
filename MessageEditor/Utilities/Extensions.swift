@@ -18,8 +18,13 @@ public extension UIViewController {
     self.present(alertController, animated: true, completion: nil)
   }
   
+  func showErrorAlert(error: NSError) {
+    let title = error.localizedDescription
+    showAlert(title: title, message: error.localizedFailureReason ?? "")
+  }
+  
   func displayToast(alertMsg : String){
-    let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-100, width: 150, height: 35))
+    let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 100, y: self.view.frame.size.height-40, width: 150, height: 35))
     toastLabel.backgroundColor = UIColor.gray
     toastLabel.textColor = UIColor.white
     toastLabel.font = UIFont(name: toastLabel.font.fontName, size: 12)
@@ -41,3 +46,14 @@ public extension UIViewController {
     self.title = title
   }
 }
+
+public extension UIView {
+  func shake() {
+    let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+    animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+    animation.duration = 0.6
+    animation.values = [-20.0, 20.0, -20.0, 20.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
+    layer.add(animation, forKey: "shake")
+  }
+}
+
